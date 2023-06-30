@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --font-PT: 'PT Serif', serif;
+  --font-Poppins: 'Poppins', sans-serif;
+  --font-Poppins-regular: 400;
+  --font-Poppins-Semibols: 600;
+  --font-PT-regular: 400;
+  --font-PT-bold: 700;
+}
+
+.container {
+  width: 90%;
+  margin: auto
+}
+
+.Menu {
+  background-color: bisque;
+}
+
+.fotografias {
+  margin-top: 50px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 50px;
+}
+
+
+.fotoContenC2 {
+  padding-top: 50px;
+}
+
+.fotoConten img,
+.fotoContenC2 img {
+  width: 85%;
+}
+
+.fotoConten span,
+.fotoConten img,
+.fotoContenC2 span,
+.fotoConten img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fotoConten span,
+.fotoContenC2 span {
+  padding-left: 5px;
+}
+
+.name,
+.name {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-Poppins-Semibols);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.workarea {
+  font-family: var(--font-PT);
+  font-size: .8rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Text Description*/
+
+.info-description {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-descrip {
+  font-size: 36px;
+  font-family: var(--font-PT);
+  font-weight: var(--font-PT-bold);
+}
+
+.descrip {
+  padding-top: 15px;
+  width: 90%;
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-Poppins-regular);
+}
+
+.descrip h2 {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-Poppins-Semibols);
+  font-size: 18px;
+}
+
+.footer {
+  text-align: center;
+  font-size: .8rem;
+  color: #bdbcbc;
+  font-family: var(--font-Poppins);
+}
+
+.footer a {
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+@media (max-width: 700px) {
+  .fotografias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .info-description {
+    display: block;
+  }
+
+  .name,
+  .name {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .fotoConten img,
+  .fotoContenC2 img {
+    width: 80%;
+  }
+
+  .name,
+  .name,
+  .descrip {
+    font-size: 14px;
+  }
+
+  .workarea {
+    font-size: .5rem;
+  }
+
+  .title-descrip {
+    font-size: 25px;
+  }
+}
